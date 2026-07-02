@@ -1,0 +1,10 @@
+# Ignore raw packet captures
+captures/
+*.pcap
+
+# Ignore large final processed datasets
+final/
+*.csv
+
+# Exceptions: Allow your small manual windows configuration file
+!windows.csv

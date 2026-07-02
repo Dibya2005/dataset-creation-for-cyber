@@ -1,0 +1,452 @@
+2026-07-02T13:37:24.093086+00:00 victimmachine systemd-logind[890]: New seat seat0.
+2026-07-02T13:37:24.093091+00:00 victimmachine systemd-logind[890]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-02T13:37:24.093099+00:00 victimmachine systemd-logind[890]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-02T13:37:24.093109+00:00 victimmachine systemd-logind[890]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-02T13:37:24.176355+00:00 victimmachine polkitd[861]: Loading rules from directory /etc/polkit-1/rules.d
+2026-07-02T13:37:24.197401+00:00 victimmachine polkitd[861]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-07-02T13:37:24.239523+00:00 victimmachine polkitd[861]: Finished loading, compiling and executing 16 rules
+2026-07-02T13:37:24.261229+00:00 victimmachine polkitd[861]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-07-02T13:38:28.327708+00:00 victimmachine passwd[1412]: password for 'victim' changed by 'root'
+2026-07-02T13:38:33.360336+00:00 victimmachine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-07-02T13:38:33.395833+00:00 victimmachine systemd-logind[890]: New session c1 of user gdm.
+2026-07-02T13:38:33.455611+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-07-02T13:38:38.595739+00:00 victimmachine polkitd[861]: Registered Authentication Agent for unix-session:c1 (system bus name :1.51 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-02T13:41:29.923091+00:00 victimmachine gdm-password]: gkr-pam: unable to locate daemon control file
+2026-07-02T13:41:29.923989+00:00 victimmachine gdm-password]: gkr-pam: stashed password to try later in open session
+2026-07-02T13:41:29.948941+00:00 victimmachine gdm-password]: pam_unix(gdm-password:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T13:41:29.992581+00:00 victimmachine systemd-logind[890]: New session 2 of user victim.
+2026-07-02T13:41:30.110618+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T13:41:30.949585+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T13:41:32.253571+00:00 victimmachine gnome-keyring-daemon[2195]: The PKCS#11 component was already initialized
+2026-07-02T13:41:32.260273+00:00 victimmachine gnome-keyring-daemon[2482]: discover_other_daemon: 1
+2026-07-02T13:41:32.269086+00:00 victimmachine gnome-keyring-daemon[2195]: The Secret Service was already initialized
+2026-07-02T13:41:32.269532+00:00 victimmachine gnome-keyring-daemon[2485]: discover_other_daemon: 1
+2026-07-02T13:41:32.290257+00:00 victimmachine gnome-keyring-daemon[2491]: discover_other_daemon: 1
+2026-07-02T13:41:36.481681+00:00 victimmachine polkitd[861]: Registered Authentication Agent for unix-session:2 (system bus name :1.94 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-02T13:41:41.363074+00:00 victimmachine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-07-02T13:41:41.405432+00:00 victimmachine systemd-logind[890]: Session c1 logged out. Waiting for processes to exit.
+2026-07-02T13:41:41.483796+00:00 victimmachine polkitd[861]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.51, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-07-02T13:41:41.509743+00:00 victimmachine systemd-logind[890]: Removed session c1.
+2026-07-02T13:45:01.311500+00:00 victimmachine CRON[4731]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T13:45:01.335964+00:00 victimmachine CRON[4731]: pam_unix(cron:session): session closed for user root
+2026-07-02T13:52:02.928230+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:02.929174+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:04.246446+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:04.246713+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:04.517142+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:04.517395+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:04.546845+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:04.547136+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:04.731504+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:04.733407+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:04.756617+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:04.756904+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:04.787069+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:04.788533+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:04.928620+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:04.928704+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:05.061387+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:05.061589+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:05.087335+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:05.087579+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:05.176244+00:00 victimmachine sudo: pam_unix(sudo:auth): conversation failed
+2026-07-02T13:52:05.176893+00:00 victimmachine sudo: pam_unix(sudo:auth): auth could not identify password for [victim]
+2026-07-02T13:52:22.520744+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install openssh-server -y
+2026-07-02T13:52:22.535476+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:52:25.427560+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:52:39.836328+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-07-02T13:52:39.839842+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:53:01.540874+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:53:05.118098+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install openssh-server -y
+2026-07-02T13:53:05.119491+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:53:12.209724+00:00 victimmachine useradd[6468]: new user: name=sshd, UID=122, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+2026-07-02T13:53:17.137242+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:53:50.116570+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/50-cloud-init.yaml
+2026-07-02T13:53:50.118397+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:54:27.697546+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:54:41.654912+00:00 victimmachine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:54:41.657428+00:00 victimmachine pkexec[6853]: victim: Executing command [USER=root] [TTY=unknown] [CWD=/home/victim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-07-02T13:54:43.930563+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/sbin/netplan apply
+2026-07-02T13:54:43.932334+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:54:44.191430+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:54:53.188005+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/50-cloud-init.yaml
+2026-07-02T13:54:53.189418+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:55:01.455204+00:00 victimmachine CRON[6978]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T13:55:01.461100+00:00 victimmachine CRON[6978]: pam_unix(cron:session): session closed for user root
+2026-07-02T13:55:17.389077+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:58:00.495501+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/chmod 600 /etc/netplan/01-network-manager-all.yaml
+2026-07-02T13:58:00.514359+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:58:00.518686+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:58:03.794016+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/sbin/netplan apply
+2026-07-02T13:58:03.796755+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:58:04.154807+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:59:08.927511+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/cat /etc/netplan/50-cloud-init.yaml
+2026-07-02T13:59:08.930371+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T13:59:08.957168+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T13:59:54.615298+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/50-cloud-init.yaml
+2026-07-02T13:59:54.616625+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:00:07.687555+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:00:10.909232+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/sbin/netplan apply
+2026-07-02T14:00:10.916211+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:00:12.847563+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:05:01.493463+00:00 victimmachine CRON[8820]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T14:05:01.503355+00:00 victimmachine CRON[8820]: pam_unix(cron:session): session closed for user root
+2026-07-02T14:08:25.928877+00:00 victimmachine gnome-keyring-daemon[2195]: couldn't initialize slot with master password: The password or PIN is incorrect
+2026-07-02T14:08:25.932334+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T14:15:01.528747+00:00 victimmachine CRON[8934]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T14:15:01.542359+00:00 victimmachine CRON[8934]: pam_unix(cron:session): session closed for user root
+2026-07-02T14:17:01.559141+00:00 victimmachine CRON[8940]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T14:17:01.575079+00:00 victimmachine CRON[8940]: pam_unix(cron:session): session closed for user root
+2026-07-02T14:19:30.046084+00:00 victimmachine systemd-logind[555]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-02T14:19:30.046103+00:00 victimmachine systemd-logind[555]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-02T14:19:30.046107+00:00 victimmachine systemd-logind[555]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-02T14:19:30.046111+00:00 victimmachine systemd-logind[555]: New seat seat0.
+2026-07-02T14:19:30.200899+00:00 victimmachine polkitd[523]: Loading rules from directory /etc/polkit-1/rules.d
+2026-07-02T14:19:30.219166+00:00 victimmachine polkitd[523]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-07-02T14:19:30.277287+00:00 victimmachine polkitd[523]: Finished loading, compiling and executing 16 rules
+2026-07-02T14:19:30.284340+00:00 victimmachine polkitd[523]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-07-02T14:19:34.170299+00:00 victimmachine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-07-02T14:19:34.206188+00:00 victimmachine systemd-logind[555]: New session c1 of user gdm.
+2026-07-02T14:19:34.254036+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-07-02T14:19:41.037305+00:00 victimmachine polkitd[523]: Registered Authentication Agent for unix-session:c1 (system bus name :1.39 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-02T14:19:55.864944+00:00 victimmachine gdm-password]: gkr-pam: unable to locate daemon control file
+2026-07-02T14:19:55.865733+00:00 victimmachine gdm-password]: gkr-pam: stashed password to try later in open session
+2026-07-02T14:19:55.890937+00:00 victimmachine gdm-password]: pam_unix(gdm-password:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T14:19:55.916569+00:00 victimmachine systemd-logind[555]: New session 2 of user victim.
+2026-07-02T14:19:55.994884+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T14:19:56.838768+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T14:19:57.956990+00:00 victimmachine gnome-keyring-daemon[1590]: The PKCS#11 component was already initialized
+2026-07-02T14:19:57.958028+00:00 victimmachine gnome-keyring-daemon[1795]: discover_other_daemon: 1
+2026-07-02T14:19:57.961603+00:00 victimmachine gnome-keyring-daemon[1590]: The Secret Service was already initialized
+2026-07-02T14:19:57.962106+00:00 victimmachine gnome-keyring-daemon[1796]: discover_other_daemon: 1
+2026-07-02T14:19:57.971816+00:00 victimmachine gnome-keyring-daemon[1799]: discover_other_daemon: 1
+2026-07-02T14:20:03.010353+00:00 victimmachine polkitd[523]: Registered Authentication Agent for unix-session:2 (system bus name :1.76 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-02T14:20:05.087646+00:00 victimmachine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-07-02T14:20:05.160747+00:00 victimmachine systemd-logind[555]: Session c1 logged out. Waiting for processes to exit.
+2026-07-02T14:20:05.306963+00:00 victimmachine polkitd[523]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.39, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-07-02T14:20:05.319898+00:00 victimmachine systemd-logind[555]: Removed session c1.
+2026-07-02T14:21:04.649792+00:00 victimmachine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:21:04.651053+00:00 victimmachine pkexec[2603]: victim: Executing command [USER=root] [TTY=unknown] [CWD=/home/victim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-07-02T14:21:29.987119+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/sbin/ufw status
+2026-07-02T14:21:29.988326+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:21:30.095022+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:25:01.219435+00:00 victimmachine CRON[2627]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T14:25:01.226103+00:00 victimmachine CRON[2627]: pam_unix(cron:session): session closed for user root
+2026-07-02T14:30:01.265188+00:00 victimmachine CRON[2656]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T14:30:01.302818+00:00 victimmachine CRON[2656]: pam_unix(cron:session): session closed for user root
+2026-07-02T14:32:00.039114+00:00 victimmachine sshd[2666]: Server listening on 0.0.0.0 port 22.
+2026-07-02T14:32:00.039999+00:00 victimmachine sshd[2666]: Server listening on :: port 22.
+2026-07-02T14:32:00.071439+00:00 victimmachine sshd[2667]: Connection closed by 192.168.56.1 port 3919
+2026-07-02T14:32:37.595997+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T14:32:54.235260+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-07-02T14:32:54.240795+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:33:03.897226+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:33:35.496182+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install apache2 -y
+2026-07-02T14:33:35.520998+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:33:43.595214+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:33:59.223932+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install apache2 -y
+2026-07-02T14:33:59.225624+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:34:07.129091+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:34:09.555438+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-07-02T14:34:09.556803+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:34:18.255962+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:34:21.417152+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install apache2 -y
+2026-07-02T14:34:21.421533+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:34:29.462390+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:35:01.308689+00:00 victimmachine CRON[2930]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T14:35:01.320421+00:00 victimmachine CRON[2930]: pam_unix(cron:session): session closed for user root
+2026-07-02T14:35:14.395315+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install apache2 -y
+2026-07-02T14:35:14.408284+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:35:22.286962+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:37:30.567032+00:00 victimmachine systemd-logind[559]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-02T14:37:30.567067+00:00 victimmachine systemd-logind[559]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-02T14:37:30.567070+00:00 victimmachine systemd-logind[559]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-02T14:37:30.567074+00:00 victimmachine systemd-logind[559]: New seat seat0.
+2026-07-02T14:37:30.643269+00:00 victimmachine polkitd[525]: Loading rules from directory /etc/polkit-1/rules.d
+2026-07-02T14:37:30.666439+00:00 victimmachine polkitd[525]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-07-02T14:37:30.789591+00:00 victimmachine polkitd[525]: Finished loading, compiling and executing 16 rules
+2026-07-02T14:37:30.806613+00:00 victimmachine polkitd[525]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-07-02T14:37:34.436193+00:00 victimmachine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-07-02T14:37:34.469630+00:00 victimmachine systemd-logind[559]: New session c1 of user gdm.
+2026-07-02T14:37:34.502139+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-07-02T14:37:39.394907+00:00 victimmachine polkitd[525]: Registered Authentication Agent for unix-session:c1 (system bus name :1.40 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-02T14:39:20.401052+00:00 victimmachine gdm-password]: gkr-pam: unable to locate daemon control file
+2026-07-02T14:39:20.401428+00:00 victimmachine gdm-password]: gkr-pam: stashed password to try later in open session
+2026-07-02T14:39:20.428370+00:00 victimmachine gdm-password]: pam_unix(gdm-password:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T14:39:20.452074+00:00 victimmachine systemd-logind[559]: New session 2 of user victim.
+2026-07-02T14:39:20.542496+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T14:39:21.273662+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T14:39:22.369460+00:00 victimmachine gnome-keyring-daemon[1621]: The PKCS#11 component was already initialized
+2026-07-02T14:39:22.376116+00:00 victimmachine gnome-keyring-daemon[1817]: discover_other_daemon: 1
+2026-07-02T14:39:22.384555+00:00 victimmachine gnome-keyring-daemon[1621]: The Secret Service was already initialized
+2026-07-02T14:39:22.385754+00:00 victimmachine gnome-keyring-daemon[1818]: discover_other_daemon: 1
+2026-07-02T14:39:22.399434+00:00 victimmachine gnome-keyring-daemon[1823]: discover_other_daemon: 1
+2026-07-02T14:39:27.335826+00:00 victimmachine polkitd[525]: Registered Authentication Agent for unix-session:2 (system bus name :1.78 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-02T14:39:29.565552+00:00 victimmachine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-07-02T14:39:29.640089+00:00 victimmachine systemd-logind[559]: Session c1 logged out. Waiting for processes to exit.
+2026-07-02T14:39:29.691684+00:00 victimmachine polkitd[525]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.40, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-07-02T14:39:29.717916+00:00 victimmachine systemd-logind[559]: Removed session c1.
+2026-07-02T14:40:16.729569+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-07-02T14:40:16.761002+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:40:26.887847+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:40:29.211786+00:00 victimmachine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:40:29.212986+00:00 victimmachine pkexec[3682]: victim: Executing command [USER=root] [TTY=unknown] [CWD=/home/victim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-07-02T14:40:59.867451+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt intall apache2 -y
+2026-07-02T14:40:59.872458+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:40:59.880178+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:41:05.557188+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install apache2 -y
+2026-07-02T14:41:05.558388+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:41:13.552209+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:44:56.088282+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/50-cloud-init.yaml
+2026-07-02T14:44:56.094129+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:45:01.856734+00:00 victimmachine CRON[4027]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T14:45:01.882726+00:00 victimmachine CRON[4027]: pam_unix(cron:session): session closed for user root
+2026-07-02T14:45:12.900328+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:45:33.188806+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/sbin/netplan apply
+2026-07-02T14:45:33.190778+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:45:35.320653+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:45:48.889765+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-07-02T14:45:48.894395+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:46:00.886254+00:00 victimmachine dbus-daemon[516]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2026-07-02T14:46:07.151166+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:46:10.942165+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install apache2 -y
+2026-07-02T14:46:10.945985+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:46:24.241012+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:46:28.026723+00:00 victimmachine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:46:28.029195+00:00 victimmachine pkexec[6195]: victim: Executing command [USER=root] [TTY=unknown] [CWD=/home/victim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-07-02T14:47:19.589993+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/50-cloud-init.yaml
+2026-07-02T14:47:19.594331+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:48:24.997687+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:48:57.932558+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/systemctl enable apache2
+2026-07-02T14:48:57.936922+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:48:59.246296+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:49:23.673858+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/systemctl start apache2
+2026-07-02T14:49:23.680140+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:49:23.700282+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:49:35.283115+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/systemctl enable apache2
+2026-07-02T14:49:35.284293+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:49:36.598006+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:49:37.827282+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/systemctl enable apache2
+2026-07-02T14:49:37.829072+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:49:39.177234+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:49:54.577228+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/systemctl start apache2
+2026-07-02T14:49:54.579963+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:49:54.595178+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:51:30.653105+00:00 victimmachine sshd[8389]: Server listening on 0.0.0.0 port 22.
+2026-07-02T14:51:30.654511+00:00 victimmachine sshd[8389]: Server listening on :: port 22.
+2026-07-02T14:51:40.004416+00:00 victimmachine sshd[8390]: Accepted password for victim from 192.168.56.1 port 57284 ssh2
+2026-07-02T14:51:40.006920+00:00 victimmachine sshd[8390]: pam_unix(sshd:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T14:51:40.013051+00:00 victimmachine systemd-logind[559]: New session 5 of user victim.
+2026-07-02T14:52:33.268631+00:00 victimmachine sudo:   victim : TTY=pts/1 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install nmap
+2026-07-02T14:52:33.276840+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T14:52:43.225640+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T14:52:54.572467+00:00 victimmachine sshd[8464]: Received disconnect from 192.168.56.1 port 57284:11: disconnected by user
+2026-07-02T14:52:54.577152+00:00 victimmachine sshd[8464]: Disconnected from user victim 192.168.56.1 port 57284
+2026-07-02T14:52:54.578229+00:00 victimmachine sshd[8390]: pam_unix(sshd:session): session closed for user victim
+2026-07-02T14:52:54.593202+00:00 victimmachine systemd-logind[559]: Session 5 logged out. Waiting for processes to exit.
+2026-07-02T14:52:54.599937+00:00 victimmachine systemd-logind[559]: Removed session 5.
+2026-07-02T14:53:19.119370+00:00 victimmachine sshd[8600]: Connection closed by 192.168.56.1 port 1281
+2026-07-02T14:53:24.992394+00:00 victimmachine sshd[8601]: Connection closed by 192.168.56.1 port 1283
+2026-07-02T14:53:32.350323+00:00 victimmachine sshd[8602]: error: Protocol major versions differ: 2 vs. 1
+2026-07-02T14:53:32.350697+00:00 victimmachine sshd[8602]: banner exchange: Connection from 192.168.56.1 port 1285: could not read protocol version
+2026-07-02T14:53:32.352250+00:00 victimmachine sshd[8603]: error: Protocol major versions differ: 2 vs. 1
+2026-07-02T14:53:32.355746+00:00 victimmachine sshd[8603]: banner exchange: Connection from 192.168.56.1 port 1291: could not read protocol version
+2026-07-02T14:53:32.667632+00:00 victimmachine sshd[8604]: Unable to negotiate with 192.168.56.1 port 1305: no matching host key type found. Their offer: ssh-dss [preauth]
+2026-07-02T14:53:32.928905+00:00 victimmachine sshd[8606]: Unable to negotiate with 192.168.56.1 port 1309: no matching host key type found. Their offer: ssh-rsa [preauth]
+2026-07-02T14:53:33.398947+00:00 victimmachine sshd[8608]: Connection closed by 192.168.56.1 port 1312 [preauth]
+2026-07-02T14:53:33.556771+00:00 victimmachine sshd[8610]: Unable to negotiate with 192.168.56.1 port 1315: no matching host key type found. Their offer: ecdsa-sha2-nistp384 [preauth]
+2026-07-02T14:53:33.810860+00:00 victimmachine sshd[8612]: Unable to negotiate with 192.168.56.1 port 1317: no matching host key type found. Their offer: ecdsa-sha2-nistp521 [preauth]
+2026-07-02T14:53:34.280137+00:00 victimmachine sshd[8614]: Connection closed by 192.168.56.1 port 1318 [preauth]
+2026-07-02T14:55:01.900270+00:00 victimmachine CRON[8621]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T14:55:01.906649+00:00 victimmachine CRON[8621]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:05:01.912786+00:00 victimmachine CRON[8784]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T15:05:01.919453+00:00 victimmachine CRON[8784]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:07:28.367484+00:00 victimmachine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:07:28.376200+00:00 victimmachine pkexec[8805]: victim: Executing command [USER=root] [TTY=unknown] [CWD=/home/victim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-07-02T15:13:52.904904+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T15:15:01.941011+00:00 victimmachine CRON[8953]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T15:15:01.944332+00:00 victimmachine CRON[8953]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:17:01.948777+00:00 victimmachine CRON[8992]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T15:17:01.968665+00:00 victimmachine CRON[8992]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:19:12.196907+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/50-cloud-init.yaml
+2026-07-02T15:19:12.217291+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:19:26.586675+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:19:45.981227+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/sbin/netplan apply
+2026-07-02T15:19:45.983530+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:19:48.527609+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:25:01.076539+00:00 victimmachine CRON[10603]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T15:25:01.089505+00:00 victimmachine CRON[10603]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:28:50.366549+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T15:30:01.111513+00:00 victimmachine CRON[10852]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T15:30:01.154361+00:00 victimmachine CRON[10852]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:30:53.956830+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt update
+2026-07-02T15:30:54.067465+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:30:59.709430+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:30:59.733177+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/apt install -y apache2 openssh-server tcpdump
+2026-07-02T15:30:59.734511+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:31:00.862790+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:31:00.875340+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/systemctl enable apache2 ssh
+2026-07-02T15:31:00.876615+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:31:03.440733+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:31:03.462180+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/systemctl start apache2 ssh
+2026-07-02T15:31:03.466345+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:31:03.561309+00:00 victimmachine sshd[11909]: Server listening on 0.0.0.0 port 22.
+2026-07-02T15:31:03.566938+00:00 victimmachine sshd[11909]: Server listening on :: port 22.
+2026-07-02T15:31:03.568492+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:31:03.578973+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/sbin/adduser testuser
+2026-07-02T15:31:03.580833+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:31:03.734515+00:00 victimmachine groupadd[11916]: group added to /etc/group: name=testuser, GID=1001
+2026-07-02T15:31:03.740625+00:00 victimmachine groupadd[11916]: group added to /etc/gshadow: name=testuser
+2026-07-02T15:31:03.742058+00:00 victimmachine groupadd[11916]: new group: name=testuser, GID=1001
+2026-07-02T15:31:03.788079+00:00 victimmachine useradd[11923]: new user: name=testuser, UID=1001, GID=1001, home=/home/testuser, shell=/bin/bash, from=/dev/pts/1
+2026-07-02T15:31:15.068000+00:00 victimmachine passwd[11936]: pam_unix(passwd:chauthtok): password changed for testuser
+2026-07-02T15:31:15.070789+00:00 victimmachine passwd[11936]: gkr-pam: couldn't update the login keyring password: no old password was entered
+2026-07-02T15:31:28.401210+00:00 victimmachine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:31:28.404379+00:00 victimmachine pkexec[11950]: victim: Executing command [USER=root] [TTY=unknown] [CWD=/home/victim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-07-02T15:31:29.313387+00:00 victimmachine chfn[11939]: changed user 'testuser' information
+2026-07-02T15:31:31.397284+00:00 victimmachine gpasswd[11965]: members of group users set by root to victim,testuser
+2026-07-02T15:31:31.402037+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:31:57.830098+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/sbin/ufw status
+2026-07-02T15:31:57.833778+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:31:58.058633+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:35:01.169321+00:00 victimmachine CRON[12078]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T15:35:01.178771+00:00 victimmachine CRON[12078]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:45:01.186289+00:00 victimmachine CRON[12390]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T15:45:01.193765+00:00 victimmachine CRON[12390]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:46:07.523773+00:00 victimmachine gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=victim uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=victim
+2026-07-02T15:46:13.874302+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T15:55:01.199341+00:00 victimmachine CRON[12778]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T15:55:01.217293+00:00 victimmachine CRON[12778]: pam_unix(cron:session): session closed for user root
+2026-07-02T15:55:28.180672+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T15:56:11.017464+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=./capture_traffic.sh normal enp0s3
+2026-07-02T15:56:11.043844+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T15:56:11.060463+00:00 victimmachine sudo:     root : TTY=pts/1 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/tcpdump -i enp0s3 -w ./captures/normal_20260702_155611.pcap -nn
+2026-07-02T15:56:11.066801+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=0)
+2026-07-02T15:56:48.174666+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T15:56:48.193543+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:04:13.057335+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T16:05:01.224524+00:00 victimmachine CRON[13190]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T16:05:01.232984+00:00 victimmachine CRON[13190]: pam_unix(cron:session): session closed for user root
+2026-07-02T16:06:23.825235+00:00 victimmachine sshd[13222]: Accepted password for testuser from 192.168.1.4 port 57706 ssh2
+2026-07-02T16:06:23.832344+00:00 victimmachine sshd[13222]: pam_unix(sshd:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2026-07-02T16:06:23.981803+00:00 victimmachine systemd-logind[559]: New session 16 of user testuser.
+2026-07-02T16:06:24.124775+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2026-07-02T16:06:32.877406+00:00 victimmachine sshd[13325]: Received disconnect from 192.168.1.4 port 57706:11: disconnected by user
+2026-07-02T16:06:32.878529+00:00 victimmachine sshd[13325]: Disconnected from user testuser 192.168.1.4 port 57706
+2026-07-02T16:06:32.878966+00:00 victimmachine sshd[13222]: pam_unix(sshd:session): session closed for user testuser
+2026-07-02T16:06:32.895534+00:00 victimmachine systemd-logind[559]: Session 16 logged out. Waiting for processes to exit.
+2026-07-02T16:06:32.906954+00:00 victimmachine systemd-logind[559]: Removed session 16.
+2026-07-02T16:07:09.800243+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=./capture_traffic.sh normal enp0s3
+2026-07-02T16:07:09.803273+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T16:07:09.822745+00:00 victimmachine sudo:     root : TTY=pts/1 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/tcpdump -i enp0s3 -w ./captures/normal_20260702_160709.pcap -nn
+2026-07-02T16:07:09.825173+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=0)
+2026-07-02T16:07:23.740855+00:00 victimmachine sshd[13573]: Accepted password for testuser from 192.168.1.4 port 57716 ssh2
+2026-07-02T16:07:23.747767+00:00 victimmachine sshd[13573]: pam_unix(sshd:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2026-07-02T16:07:23.776953+00:00 victimmachine systemd-logind[559]: New session 18 of user testuser.
+2026-07-02T16:07:23.844845+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2026-07-02T16:08:39.516775+00:00 victimmachine sshd[13651]: Received disconnect from 192.168.1.4 port 57716:11: disconnected by user
+2026-07-02T16:08:39.517379+00:00 victimmachine sshd[13651]: Disconnected from user testuser 192.168.1.4 port 57716
+2026-07-02T16:08:39.517848+00:00 victimmachine sshd[13573]: pam_unix(sshd:session): session closed for user testuser
+2026-07-02T16:08:39.527801+00:00 victimmachine systemd-logind[559]: Session 18 logged out. Waiting for processes to exit.
+2026-07-02T16:08:39.539279+00:00 victimmachine systemd-logind[559]: Removed session 18.
+2026-07-02T16:08:44.157469+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:08:44.192615+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:11:40.550085+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=./capture_traffic.sh port_scan enp0s3
+2026-07-02T16:11:40.571956+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T16:11:40.579765+00:00 victimmachine sudo:     root : TTY=pts/1 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/tcpdump -i enp0s3 -w ./captures/port_scan_20260702_161140.pcap -nn
+2026-07-02T16:11:40.581420+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=0)
+2026-07-02T16:11:45.787993+00:00 victimmachine sshd[13892]: Connection closed by 192.168.1.4 port 3443
+2026-07-02T16:11:54.567026+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:11:54.572668+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:15:01.240548+00:00 victimmachine CRON[13984]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T16:15:01.248405+00:00 victimmachine CRON[13984]: pam_unix(cron:session): session closed for user root
+2026-07-02T16:17:01.254804+00:00 victimmachine CRON[14055]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T16:17:01.265268+00:00 victimmachine CRON[14055]: pam_unix(cron:session): session closed for user root
+2026-07-02T16:25:01.272742+00:00 victimmachine CRON[14266]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T16:25:01.280009+00:00 victimmachine CRON[14266]: pam_unix(cron:session): session closed for user root
+2026-07-02T16:28:35.466511+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T16:30:01.286904+00:00 victimmachine CRON[14430]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T16:30:01.307576+00:00 victimmachine CRON[14430]: pam_unix(cron:session): session closed for user root
+2026-07-02T16:30:08.564144+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=./capture_traffic.sh ssh_bruteforce enp0s3
+2026-07-02T16:30:08.594695+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T16:30:08.625918+00:00 victimmachine sudo:     root : TTY=pts/1 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/tcpdump -i enp0s3 -w ./captures/ssh_bruteforce_20260702_163008.pcap -nn
+2026-07-02T16:30:08.627904+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=0)
+2026-07-02T16:30:16.812063+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:30:16.818404+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:32:35.241258+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=./capture_traffic.sh ssh_bruteforce enp0s3
+2026-07-02T16:32:35.243443+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T16:32:35.271089+00:00 victimmachine sudo:     root : TTY=pts/1 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/tcpdump -i enp0s3 -w ./captures/ssh_bruteforce_20260702_163235.pcap -nn
+2026-07-02T16:32:35.272295+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=0)
+2026-07-02T16:32:41.138921+00:00 victimmachine sshd[14541]: Received disconnect from 192.168.1.4 port 3496:11: Bye Bye [preauth]
+2026-07-02T16:32:41.140229+00:00 victimmachine sshd[14541]: Disconnected from authenticating user testuser 192.168.1.4 port 3496 [preauth]
+2026-07-02T16:32:42.186731+00:00 victimmachine sshd[14544]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=testuser
+2026-07-02T16:32:42.197259+00:00 victimmachine sshd[14545]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=testuser
+2026-07-02T16:32:42.203538+00:00 victimmachine sshd[14546]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.4  user=testuser
+2026-07-02T16:32:42.417098+00:00 victimmachine sshd[14543]: Accepted password for testuser from 192.168.1.4 port 3500 ssh2
+2026-07-02T16:32:42.421737+00:00 victimmachine sshd[14543]: pam_unix(sshd:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2026-07-02T16:32:42.462383+00:00 victimmachine systemd-logind[559]: New session 24 of user testuser.
+2026-07-02T16:32:42.552736+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2026-07-02T16:32:43.059469+00:00 victimmachine sshd[14543]: pam_unix(sshd:session): session closed for user testuser
+2026-07-02T16:32:43.074386+00:00 victimmachine systemd-logind[559]: Session 24 logged out. Waiting for processes to exit.
+2026-07-02T16:32:43.093796+00:00 victimmachine systemd-logind[559]: Removed session 24.
+2026-07-02T16:32:44.402076+00:00 victimmachine sshd[14544]: Failed password for testuser from 192.168.1.4 port 3406 ssh2
+2026-07-02T16:32:44.418418+00:00 victimmachine sshd[14546]: Failed password for testuser from 192.168.1.4 port 3426 ssh2
+2026-07-02T16:32:44.419416+00:00 victimmachine sshd[14545]: Failed password for testuser from 192.168.1.4 port 3422 ssh2
+2026-07-02T16:32:45.166627+00:00 victimmachine sshd[14545]: Connection closed by authenticating user testuser 192.168.1.4 port 3422 [preauth]
+2026-07-02T16:32:45.190598+00:00 victimmachine sshd[14546]: Connection closed by authenticating user testuser 192.168.1.4 port 3426 [preauth]
+2026-07-02T16:32:45.194350+00:00 victimmachine sshd[14544]: Connection closed by authenticating user testuser 192.168.1.4 port 3406 [preauth]
+2026-07-02T16:32:57.039541+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:32:57.045228+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:35:01.311768+00:00 victimmachine CRON[14808]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T16:35:01.323555+00:00 victimmachine CRON[14808]: pam_unix(cron:session): session closed for user root
+2026-07-02T16:36:30.560195+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=./capture_traffic.sh http_flood enp0s3
+2026-07-02T16:36:30.574520+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T16:36:30.594696+00:00 victimmachine sudo:     root : TTY=pts/1 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/tcpdump -i enp0s3 -w ./captures/http_flood_20260702_163630.pcap -nn
+2026-07-02T16:36:30.596504+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=0)
+2026-07-02T16:37:32.333773+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:37:32.362690+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:40:50.583478+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=./capture_traffic.sh slow_http enp0s3
+2026-07-02T16:40:50.611305+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T16:40:50.625216+00:00 victimmachine sudo:     root : TTY=pts/1 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/tcpdump -i enp0s3 -w ./captures/slow_http_20260702_164050.pcap -nn
+2026-07-02T16:40:50.625775+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=0)
+2026-07-02T16:43:40.840212+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:43:40.845866+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T16:45:01.342071+00:00 victimmachine CRON[15154]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-02T16:45:01.349537+00:00 victimmachine CRON[15154]: pam_unix(cron:session): session closed for user root
+2026-07-02T17:37:50.431754+00:00 victimmachine systemd-logind[604]: New seat seat0.
+2026-07-02T17:37:50.431781+00:00 victimmachine systemd-logind[604]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-02T17:37:50.431787+00:00 victimmachine systemd-logind[604]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-02T17:37:50.431810+00:00 victimmachine systemd-logind[604]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-02T17:37:50.409171+00:00 victimmachine polkitd[570]: Loading rules from directory /etc/polkit-1/rules.d
+2026-07-02T17:37:50.437288+00:00 victimmachine polkitd[570]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-07-02T17:37:50.565162+00:00 victimmachine polkitd[570]: Finished loading, compiling and executing 16 rules
+2026-07-02T17:37:50.574370+00:00 victimmachine polkitd[570]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-07-02T17:37:54.688286+00:00 victimmachine sshd[1038]: Server listening on 0.0.0.0 port 22.
+2026-07-02T17:37:54.698252+00:00 victimmachine sshd[1038]: Server listening on :: port 22.
+2026-07-02T17:37:55.399049+00:00 victimmachine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-07-02T17:37:55.442804+00:00 victimmachine systemd-logind[604]: New session c1 of user gdm.
+2026-07-02T17:37:55.509872+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-07-02T17:38:01.728359+00:00 victimmachine polkitd[570]: Registered Authentication Agent for unix-session:c1 (system bus name :1.41 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-02T17:40:25.058569+00:00 victimmachine gdm-password]: gkr-pam: unable to locate daemon control file
+2026-07-02T17:40:25.060221+00:00 victimmachine gdm-password]: gkr-pam: stashed password to try later in open session
+2026-07-02T17:40:25.075660+00:00 victimmachine gdm-password]: pam_unix(gdm-password:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T17:40:25.113633+00:00 victimmachine systemd-logind[604]: New session 2 of user victim.
+2026-07-02T17:40:25.199745+00:00 victimmachine (systemd): pam_unix(systemd-user:session): session opened for user victim(uid=1000) by victim(uid=0)
+2026-07-02T17:40:25.988918+00:00 victimmachine gdm-password]: gkr-pam: unlocked login keyring
+2026-07-02T17:40:27.024284+00:00 victimmachine gnome-keyring-daemon[1734]: The PKCS#11 component was already initialized
+2026-07-02T17:40:27.024819+00:00 victimmachine gnome-keyring-daemon[1938]: discover_other_daemon: 1
+2026-07-02T17:40:27.036979+00:00 victimmachine gnome-keyring-daemon[1734]: The Secret Service was already initialized
+2026-07-02T17:40:27.037429+00:00 victimmachine gnome-keyring-daemon[1940]: discover_other_daemon: 1
+2026-07-02T17:40:27.045747+00:00 victimmachine gnome-keyring-daemon[1942]: discover_other_daemon: 1
+2026-07-02T17:40:32.581439+00:00 victimmachine polkitd[570]: Registered Authentication Agent for unix-session:2 (system bus name :1.78 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-07-02T17:40:35.155105+00:00 victimmachine gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-07-02T17:40:35.232481+00:00 victimmachine systemd-logind[604]: Session c1 logged out. Waiting for processes to exit.
+2026-07-02T17:40:35.301964+00:00 victimmachine polkitd[570]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.41, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-07-02T17:40:35.317484+00:00 victimmachine systemd-logind[604]: Removed session c1.
+2026-07-02T17:41:33.742467+00:00 victimmachine pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T17:41:33.743718+00:00 victimmachine pkexec[2728]: victim: Executing command [USER=root] [TTY=unknown] [CWD=/home/victim] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-07-02T17:43:24.232307+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/cp /var/log/apache2/access.log /home/victim/access.log
+2026-07-02T17:43:24.235490+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
+2026-07-02T17:43:24.245660+00:00 victimmachine sudo: pam_unix(sudo:session): session closed for user root
+2026-07-02T17:43:39.974519+00:00 victimmachine sudo:   victim : TTY=pts/0 ; PWD=/home/victim ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /home/victim/auth.log
+2026-07-02T17:43:39.975888+00:00 victimmachine sudo: pam_unix(sudo:session): session opened for user root(uid=0) by victim(uid=1000)
